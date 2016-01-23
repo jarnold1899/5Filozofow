@@ -30,10 +30,10 @@ class Filozof implements Runnable {
 		}
 	}
 
-	void czekajNaWidelec(Widelec fork) {
+	void czekajNaWidelec(Widelec widelec) {
 		do {
-			if (fork.getPosiadacz().get() == Widelec.STOL) {
-				fork.getPosiadacz().set(id);
+			if (widelec.getPosiadacz().get() == Widelec.STOL) {
+				widelec.getPosiadacz().set(id);
 				return;
 			} else { // ktos ma widelec
 				sleep(); // czekaj na kolejke

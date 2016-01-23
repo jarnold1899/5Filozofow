@@ -16,8 +16,8 @@ class Widelec {
 		return posiadacz;
 	}
 
-	public void setPosiadacz(AtomicInteger holder) {
-		this.posiadacz = holder;
+	public void setPosiadacz(AtomicInteger posiadacz) {
+		this.posiadacz = posiadacz;
 	}
 
 	public int getId() {
